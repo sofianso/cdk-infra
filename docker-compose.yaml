@@ -1,0 +1,18 @@
+---
+version: "3"
+services:
+  linter:
+    image: github/super-linter:latest
+    environment:
+      RUN_LOCAL: "true"
+      USE_FIND_ALGORITHM: "true"
+      # VALIDATE_PYTHON: "true"
+      # VALIDATE_TYPESCRIPT_ES: "true"
+      # VALIDATE_TYPESCRIPT_STANDARD: "true"
+      # VALIDATE_YAML: "true"
+    volumes:
+      - config:/tmp/lint/config
+      - lambdas:/tmp/lint/lambdas
+      - vpcs:/tmp/lint/vpcs
+      - lib:/tmp/lint/lib
+      - index.ts:/tmp/lint/index.ts

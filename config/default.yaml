@@ -1,0 +1,7 @@
+BootstrapQualifier: hnb659fds
+CodecommitRepository: app-cross-account-ts
+TerminationProtection: false
+StackTags:
+  CostCentre: abc
+  Department: xyz
+  Value: 123

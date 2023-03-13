@@ -1,0 +1,9 @@
+AWSRegion: ap-southeast-2
+AccountId: 223206037588
+Stacks:
+  AppStackName: notification-prod-ts
+  hello: 123
+Lambda:
+  Environments:
+    Environment: prod
+    VAL1: XYZ
